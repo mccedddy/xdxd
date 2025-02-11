@@ -1,0 +1,198 @@
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+    opacity: 0;
+  }
+}
+body {
+  background-color: rgb(255, 206, 214);
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.heart {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background-image: url("https://i.pinimg.com/originals/1d/50/75/1d5075419e06e9dd9e9a8e5a0d1935b4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: float 5s linear infinite;
+}
+
+.heart:nth-child(1) {
+  left: 16%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  width: 14px;
+  height: 15px;
+}
+
+.heart:nth-child(2) {
+  left: 64%;
+  animation-delay: 5s;
+  animation-duration: 8s;
+  width: 14px;
+  height: 12px;
+}
+
+.heart:nth-child(3) {
+  left: 100%;
+  animation-delay: 5s;
+  animation-duration: 7s;
+  width: 19px;
+  height: 13px;
+}
+
+.heart:nth-child(4) {
+  left: 61%;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  width: 12px;
+  height: 19px;
+}
+
+.heart:nth-child(5) {
+  left: 43%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  width: 16px;
+  height: 15px;
+}
+
+.heart:nth-child(6) {
+  left: 19%;
+  animation-delay: 1s;
+  animation-duration: 7s;
+  width: 16px;
+  height: 12px;
+}
+
+.heart:nth-child(7) {
+  left: 17%;
+  animation-delay: 4s;
+  animation-duration: 8s;
+  width: 14px;
+  height: 11px;
+}
+
+.heart:nth-child(8) {
+  left: 40%;
+  animation-delay: 4s;
+  animation-duration: 6s;
+  width: 11px;
+  height: 16px;
+}
+
+.heart:nth-child(9) {
+  left: 88%;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  width: 15px;
+  height: 14px;
+}
+
+.heart:nth-child(10) {
+  left: 36%;
+  animation-delay: 1s;
+  animation-duration: 7s;
+  width: 12px;
+  height: 15px;
+}
+
+.heart:nth-child(11) {
+  left: 31%;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  width: 14px;
+  height: 16px;
+}
+
+.heart:nth-child(12) {
+  left: 41%;
+  animation-delay: 5s;
+  animation-duration: 7s;
+  width: 11px;
+  height: 17px;
+}
+
+.heart:nth-child(13) {
+  left: 79%;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  width: 13px;
+  height: 16px;
+}
+
+.heart:nth-child(14) {
+  left: 34%;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  width: 13px;
+  height: 14px;
+}
+
+.heart:nth-child(15) {
+  left: 65%;
+  animation-delay: 5s;
+  animation-duration: 7s;
+  width: 19px;
+  height: 15px;
+}
+
+.heart:nth-child(16) {
+  left: 71%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  width: 11px;
+  height: 19px;
+}
+
+.heart:nth-child(17) {
+  left: 94%;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  width: 19px;
+  height: 19px;
+}
+
+.heart:nth-child(18) {
+  left: 69%;
+  animation-delay: 1s;
+  animation-duration: 6s;
+  width: 20px;
+  height: 17px;
+}
+
+.heart:nth-child(19) {
+  left: 22%;
+  animation-delay: 4s;
+  animation-duration: 8s;
+  width: 18px;
+  height: 13px;
+}
+
+.heart:nth-child(20) {
+  left: 80%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  width: 12px;
+  height: 17px;
+}
+
+/*# sourceMappingURL=main.css.map */

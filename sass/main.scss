@@ -1,0 +1,50 @@
+@use "sass:math";
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+    opacity: 0;
+  }
+}
+
+body {
+  background-color: rgb(255, 206, 214);
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.heart {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background-image: url("https://i.pinimg.com/originals/1d/50/75/1d5075419e06e9dd9e9a8e5a0d1935b4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: float 5s linear infinite;
+}
+
+// Generate multiple hearts with math.random properties
+@for $i from 1 through 20 {
+  .heart:nth-child(#{$i}) {
+    left: math.random(100) * 1%;
+    animation-delay: math.random(5) * 1s;
+    animation-duration: math.random(4) + 4s;
+    width: math.random(10) + 10px;
+    height: math.random(10) + 10px;
+  }
+}
