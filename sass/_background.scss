@@ -1,0 +1,35 @@
+@use "sass:math";
+
+.hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("https://i.pinimg.com/originals/1d/50/75/1d5075419e06e9dd9e9a8e5a0d1935b4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: float 5s linear infinite;
+}
+
+@for $i from 1 through 20 {
+  .heart:nth-child(#{$i}) {
+    left: math.random(100) * 1%;
+    animation-delay: math.random(5) * 1s;
+    animation-duration: math.random(4) + 4s;
+  }
+}
+
+@media (max-width: 860px) {
+  .heart {
+    width: 80px;
+    height: 80px;
+  }
+}

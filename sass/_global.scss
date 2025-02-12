@@ -1,0 +1,13 @@
+@use "colors";
+
+body {
+  background-color: colors.$background;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  font-family: "Pixelify sans";
+  color: colors.$font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

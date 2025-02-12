@@ -1,0 +1,20 @@
+$white: #fff;
+$black: #000;
+
+$pink-lightest: rgb(255, 224, 229);
+$pink-lighter: rgb(255, 206, 214);
+$pink-light: rgb(255, 168, 183);
+$pink: rgb(255, 125, 147);
+$pink-dark: rgb(234, 94, 118);
+$pink-darker: rgb(209, 75, 97);
+$pink-darkest: rgb(145, 63, 75);
+
+$background: $pink-lighter;
+$font: $pink-dark;
+
+$button-bg: $pink;
+$button-bg-active: $pink-dark;
+$button-highlight: $pink-light;
+$button-highlight-active: $pink;
+$button-shadow: $pink-dark;
+$button-shadow-active: $pink-darker;

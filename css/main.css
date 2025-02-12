@@ -16,12 +16,19 @@ body {
   overflow: hidden;
   height: 100vh;
   margin: 0;
+  font-family: "Pixelify sans";
+  color: rgb(234, 94, 118);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hearts-container {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  z-index: -10;
 }
 
 .heart {
@@ -36,123 +43,203 @@ body {
 }
 
 .heart:nth-child(1) {
-  left: 87%;
-  animation-delay: 4s;
-  animation-duration: 6s;
-}
-
-.heart:nth-child(2) {
-  left: 73%;
-  animation-delay: 4s;
-  animation-duration: 6s;
-}
-
-.heart:nth-child(3) {
-  left: 29%;
+  left: 70%;
   animation-delay: 1s;
   animation-duration: 7s;
 }
 
-.heart:nth-child(4) {
-  left: 27%;
-  animation-delay: 3s;
+.heart:nth-child(2) {
+  left: 7%;
+  animation-delay: 4s;
+  animation-duration: 8s;
+}
+
+.heart:nth-child(3) {
+  left: 93%;
+  animation-delay: 4s;
   animation-duration: 6s;
+}
+
+.heart:nth-child(4) {
+  left: 97%;
+  animation-delay: 2s;
+  animation-duration: 8s;
 }
 
 .heart:nth-child(5) {
-  left: 11%;
-  animation-delay: 3s;
-  animation-duration: 6s;
+  left: 50%;
+  animation-delay: 1s;
+  animation-duration: 7s;
 }
 
 .heart:nth-child(6) {
-  left: 68%;
+  left: 79%;
   animation-delay: 5s;
   animation-duration: 7s;
 }
 
 .heart:nth-child(7) {
-  left: 77%;
-  animation-delay: 2s;
-  animation-duration: 8s;
+  left: 26%;
+  animation-delay: 5s;
+  animation-duration: 6s;
 }
 
 .heart:nth-child(8) {
-  left: 86%;
-  animation-delay: 2s;
-  animation-duration: 7s;
+  left: 59%;
+  animation-delay: 1s;
+  animation-duration: 6s;
 }
 
 .heart:nth-child(9) {
-  left: 30%;
-  animation-delay: 1s;
-  animation-duration: 5s;
+  left: 18%;
+  animation-delay: 4s;
+  animation-duration: 7s;
 }
 
 .heart:nth-child(10) {
-  left: 40%;
-  animation-delay: 5s;
+  left: 58%;
+  animation-delay: 1s;
   animation-duration: 8s;
 }
 
 .heart:nth-child(11) {
-  left: 25%;
-  animation-delay: 3s;
+  left: 40%;
+  animation-delay: 4s;
   animation-duration: 7s;
 }
 
 .heart:nth-child(12) {
-  left: 58%;
-  animation-delay: 1s;
+  left: 90%;
+  animation-delay: 2s;
   animation-duration: 7s;
 }
 
 .heart:nth-child(13) {
-  left: 100%;
-  animation-delay: 5s;
+  left: 26%;
+  animation-delay: 3s;
   animation-duration: 8s;
 }
 
 .heart:nth-child(14) {
-  left: 32%;
-  animation-delay: 3s;
-  animation-duration: 6s;
-}
-
-.heart:nth-child(15) {
-  left: 85%;
-  animation-delay: 3s;
-  animation-duration: 5s;
-}
-
-.heart:nth-child(16) {
-  left: 51%;
-  animation-delay: 3s;
-  animation-duration: 5s;
-}
-
-.heart:nth-child(17) {
-  left: 50%;
-  animation-delay: 2s;
-  animation-duration: 8s;
-}
-
-.heart:nth-child(18) {
-  left: 82%;
-  animation-delay: 5s;
+  left: 25%;
+  animation-delay: 1s;
   animation-duration: 7s;
 }
 
-.heart:nth-child(19) {
-  left: 39%;
-  animation-delay: 2s;
+.heart:nth-child(15) {
+  left: 77%;
+  animation-delay: 3s;
+  animation-duration: 7s;
+}
+
+.heart:nth-child(16) {
+  left: 93%;
+  animation-delay: 4s;
+  animation-duration: 7s;
+}
+
+.heart:nth-child(17) {
+  left: 69%;
+  animation-delay: 5s;
+  animation-duration: 5s;
+}
+
+.heart:nth-child(18) {
+  left: 85%;
+  animation-delay: 4s;
   animation-duration: 6s;
 }
 
-.heart:nth-child(20) {
-  left: 62%;
-  animation-delay: 2s;
+.heart:nth-child(19) {
+  left: 90%;
+  animation-delay: 1s;
   animation-duration: 8s;
+}
+
+.heart:nth-child(20) {
+  left: 35%;
+  animation-delay: 1s;
+  animation-duration: 7s;
+}
+
+@media (max-width: 860px) {
+  .heart {
+    width: 80px;
+    height: 80px;
+  }
+}
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.button a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(255, 125, 147);
+  display: block;
+  position: relative;
+  padding: 5px 25px;
+  -webkit-tap-highlight-color: #000;
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  -webkit-box-shadow: inset 0 1px 0 rgb(255, 168, 183), 0 10px 0 rgb(234, 94, 118);
+  -moz-box-shadow: inset 0 1px 0 rgb(255, 168, 183), 0 10px 0 rgb(234, 94, 118);
+  box-shadow: inset 0 1px 0 rgb(255, 168, 183), 0 10px 0 rgb(234, 94, 118);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: rgb(234, 94, 118);
+  -webkit-box-shadow: inset 0 1px 0 rgb(255, 125, 147), inset 0 -3px 0 rgb(209, 75, 97);
+  -moz-box-shadow: inset 0 1px 0 rgb(255, 168, 183), inset 0 -3pxpx 0 rgb(209, 75, 97);
+  box-shadow: inset 0 1px 0 rgb(255, 168, 183), inset 0 -3px 0 rgb(209, 75, 97);
+}
+
+main {
+  border: 10px solid rgb(234, 94, 118);
+  background-color: rgb(255, 224, 229);
+  width: 30%;
+  height: auto;
+  box-shadow: -10px 10px 0px rgb(145, 63, 75);
+  box-sizing: border-box;
+}
+
+.page {
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
+}
+.page:first-child {
+  display: flex;
+}
+
+img[alt=cat-angry] {
+  display: none; /* Hide angry cat initially */
+}
+
+#valentines-text-angry {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  main {
+    height: auto;
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
